@@ -1,0 +1,8 @@
+### configuration file for openfortivpn, see man openfortivpn(1) ###
+
+# #  Anexia-hosted Fortigate VPN gateway
+host = newton-vpn.anexia-it.com
+port = 443
+username = pvasco
+password = 
+persistent = 60
