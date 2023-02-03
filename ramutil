@@ -1,1 +1,7 @@
 sourcetype="your_sourcetype" host="your_hostname" "RAM utilization" | eval utilization=substr(value, 0, index(value, "%")) | timechart avg(utilization) as utilization by host
+
+This query uses the sourcetype and host parameters to specify the source type and hostname for the logs you want to search. The "RAM utilization" keyword is used to filter for logs that contain the text "RAM utilization".
+
+The eval command is used to extract the utilization value from the log message, by using the substr and index functions to extract the characters from the beginning of the string to the percent symbol. The timechart command is then used to generate a chart of the average utilization over time, grouped by host.
+
+Note that you will need to replace your_sourcetype and your_hostname with the actual source type and hostname for your logs. Additionally, the exact format of your log messages and the field names used in your data may be different, so you may need to 
