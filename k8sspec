@@ -1,0 +1,19 @@
+The exact specifications needed for a Kubernetes cluster to host 10 pods will depend on several factors, such as the size and resource requirements of each pod, the desired level of redundancy and availability, and the overall infrastructure and network constraints.
+
+However, here is a general guideline for the minimum specifications required:
+
+    Master node:
+        CPU: 2 cores
+        Memory: 4 GB
+        Disk: 20 GB
+
+    Worker node:
+        CPU: 4 cores
+        Memory: 8 GB
+        Disk: 40 GB
+
+These specifications should provide enough resources to run 10 small to medium sized pods. However, if you have larger or more resource-intensive pods, you may need to increase the size of the worker nodes accordingly.
+
+It's also worth noting that these are minimum specifications and may not provide enough resources for a production-grade cluster. In a production environment, it's generally recommended to have at least 3 master nodes and 3 worker nodes, with larger and more powerful nodes, to ensure high availability and reliability.
+
+Additionally, you should also consider networking and storage requirements, as well as any security and compliance requirements that may apply to your use case.
