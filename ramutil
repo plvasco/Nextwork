@@ -1,0 +1,1 @@
+sourcetype="your_sourcetype" host="your_hostname" "RAM utilization" | eval utilization=substr(value, 0, index(value, "%")) | timechart avg(utilization) as utilization by host
